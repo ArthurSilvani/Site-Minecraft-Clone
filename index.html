@@ -9,11 +9,9 @@
 <body>
 
   <header class="header-principal">
-    
     <a href="#" class="logo" aria-label="Página Inicial">
       <img src="assets/logo_pedra_300x51.svg" alt="Logotipo oficial do Minecraft em blocos de pedra">
     </a>
-
     <nav aria-label="Navegação principal">
       <ul>
         <li><a href="#jogos">JOGOS</a></li>
@@ -22,69 +20,56 @@
         <li><a href="#suporte">SUPORTE</a></li>
       </ul>
     </nav>
-
     <form class="search-form" action="#" method="GET">
       <label for="site-search" class="sr-only">Pesquisar no site:</label>
       <input type="search" id="site-search" name="q" placeholder="Buscar no Minecraft...">
       <button type="submit">Buscar</button>
     </form>
-
   </header>
 
   <main>
-
-    <section class="hero">
+    <section class="hero" aria-labelledby="titulo-hero">
       <section class="hero-content">
-        <h1>MINECRAFT</h1>
+        <h1 id="titulo-hero">MINECRAFT</h1>
         <p>Crie, explore e sobreviva em um mundo de blocos infinito.</p>
         <a href="#comprar" class="btn-primary">OBTER O MINECRAFT</a>
       </section>
-
-      <figure class="hero-image">
-        <img src="assets/fundo_cabeçalho_1080x1080.webp" alt="Personagem Steve no cenário de blocos do Minecraft olhando o horizonte">
-      </figure>
+      
+      <!-- Imagem direta, sem figure -->
+      <img class="hero-image" src="assets/fundo_cabeçalho_1080x1080.webp" alt="Personagem Steve no cenário de blocos do Minecraft olhando o horizonte">
     </section>
 
     <section class="games-section" id="jogos">
       <h2>DESCUBRA OS JOGOS DO MINECRAFT</h2>
-
+      
       <article class="game-card">
-        <figure>
-          <img src="assets/MINECRAFT.jpg" alt="Capa do jogo Minecraft original mostrando blocos de grama e paisagem verde">
-        </figure>
+        <img src="assets/MINECRAFT.jpg" alt="Capa do jogo Minecraft original mostrando blocos de grama e paisagem verde">
         <h3>Minecraft</h3>
         <p>Explore seu próprio mundo, sobreviva à noite e crie tudo o que puder imaginar.</p>
         <a href="#" class="card-link">Saiba mais</a>
       </article>
 
       <article class="game-card">
-        <figure>
-          <img src="assets/MINECRAFT_DUNGEONS_II.jpg" alt="Capa do jogo Minecraft Dungeons 2 com novos heróis e desafios">
-        </figure>
+        <img src="assets/MINECRAFT_DUNGEONS_II.jpg" alt="Capa do jogo Minecraft Dungeons 2 com novos heróis e desafios">
         <h3>Minecraft Dungeons 2</h3>
         <p>Continue a aventura épica com novos desafios, armas e masmorras ainda mais perigosas.</p>
         <a href="#" class="card-link">Saiba mais</a>
       </article>
+
       <article class="game-card">
-        <figure>
-          <img src="assets/MINECRAFT_DUNGEONS.webp" alt="Capa do jogo Minecraft Dungeons com heróis enfrentando monstros em uma masmorra">
-        </figure>
+        <img src="assets/MINECRAFT_DUNGEONS.webp" alt="Capa do jogo Minecraft Dungeons com heróis enfrentando monstros em uma masmorra">
         <h3>Minecraft Dungeons</h3>
         <p>Enfrente hordas de monstros em um jogo de ação e aventura inspirado em masmorras clássicas.</p>
         <a href="#" class="card-link">Saiba mais</a>
       </article>
 
       <article class="game-card">
-        <figure>
-          <img src="assets/MINECRAFT_LEGENDS.webp" alt="Capa do jogo Minecraft Legends mostrando um herói liderando tropas em um cavalo">
-        </figure>
+        <img src="assets/MINECRAFT_LEGENDS.webp" alt="Capa do jogo Minecraft Legends mostrando um herói liderando tropas em um cavalo">
         <h3>Minecraft Legends</h3>
         <p>Lidere suas tropas em batalhas estratégicas para defender a Overworld dos piglins.</p>
         <a href="#" class="card-link">Saiba mais</a>
       </article>
     </section>
-
-      </section>
 
     <section class="dungeons-promo" aria-labelledby="titulo-dungeons">
       <img src="assets/desbrave_o_desconhecido_1920x1080.webp" alt="Personagens de Minecraft Dungeons em pose de batalha iluminados por luz azul">
@@ -104,58 +89,55 @@
         <a href="#" class="link-pequeno">VER TODOS PACOTES DE SKINS ></a>
       </section>
       
-
       <article class="highlight-item">
+        <h3 class="sr-only">Pacote em Destaque</h3>
         <img src="assets/super_man.jpg" alt="Card do pacote de skins do Superman disponível no Marketplace">
       </article>
     </section>
 
     <section class="marketplace-addons" aria-labelledby="titulo-complementos">
-      
-      <section class="addons-header">
+      <header class="addons-header">
         <h2 id="titulo-complementos">COMPLEMENTOS DO MARKETPLACE</h2>
         <p>Agora há ainda mais maneiras de montar seu jogo na Bedrock, do seu jeito! Explore os novos complementos...</p>
         <a href="#" class="btn-primary">EXPLORAR MARKETPLACE</a>
-      </section>
-
+      </header>
+      
       <section class="grade-complementos">
-        
+        <h3 class="sr-only">Lista de Complementos</h3>
         <article class="addon-card">
           <img src="assets/add_on_animal.jpg" alt="Capa do Add-on Torne-se um Animal">
           <h3>Torne-se um Animal</h3>
           <p>by LinsCraft</p>
         </article>
-
         <article class="addon-card">
           <img src="assets/add_on_fireworks.jpg" alt="Capa do Add-on Mais fogos de artifício">
           <h3>Mais fogos de artifício</h3>
           <p>by ...</p>
         </article>
-
         <article class="addon-card">
           <img src="assets/add_on_advanced_combat.jpg" alt="Capa do Add-on Combate Avançado">
           <h3>Combate Avançado</h3>
           <p>by ...</p>
         </article>
-
         <article class="addon-card">
           <img src="assets/add_on_plenty_of_essentials.jpg" alt="Capa do Add-on Muitos Essenciais">
           <h3>Muitos Essenciais</h3>
           <p>by ...</p>
         </article>
-
         <article class="addon-card">
           <img src="assets/add_on_elevators.jpg" alt="Capa do Add-on Elevators">
           <h3>Elevators Add-On</h3>
           <p>by ...</p>
         </article>
-
       </section>
     </section>
-        <section class="trailers-section" aria-labelledby="titulo-trailers">
-      <h2 id="titulo-trailers">TRAILERS DE JOGABILIDADE</h2>
 
+    <section class="trailers-section" aria-labelledby="titulo-trailers">
+      <h2 id="titulo-trailers">TRAILERS DE JOGABILIDADE</h2>
+      
       <section class="trailers-container">
+        <h3 class="sr-only">Vídeos Disponíveis</h3>
+        
         <aside class="trailers-sidebar" aria-label="Lista de jogos para trailers">
           <ul>
             <li><button type="button">Minecraft</button></li>
@@ -165,95 +147,150 @@
             <li><button type="button">Minecraft Education</button></li>
           </ul>
         </aside>
-
-        <section class="trailer-video">
+        
+        <article class="trailer-video">
+          <h4 class="sr-only">Trailer Minecraft</h4>
           <img src="assets/frame_video_home.png" alt="Cena do trailer de jogabilidade do Minecraft mostrando os personagens Steve e Alex explorando">
           <p>Explore seus próprios mundos, sobreviva à noite e crie tudo o que puder imaginar!</p>
           <a href="#" class="btn-primary">COMPRAR O MINECRAFT</a>
-        </section>
+        </article>
         
-        <section class="trailer-video">
-          <img src="assets/frame_dungeons2.png" alt="cena do minecraft dungeons 2">
+        <article class="trailer-video">
+          <h4 class="sr-only">Trailer Minecraft Dungeons 2</h4>
+          <img src="assets/frame_dungeons2.png" alt="Cena do minecraft dungeons 2">
           <p>Largue a picareta, pegue uma espada e embarque em uma nova aventura emocionante no Minecraft Dungeons II.</p>
           <a href="#" class="btn-primary">SAIBA MAIS</a>
-        </section>
+        </article>
         
-        <section class="trailer-video">
-          <img src="assets/frame_dungeons.png" alt="cena do minecraft dungeons ">
-          <p>Descubra um jogo de ação e aventura inspirado nos clássicos exploradores de masmorras..</p>
+        <article class="trailer-video">
+          <h4 class="sr-only">Trailer Minecraft Dungeons</h4>
+          <img src="assets/frame_dungeons.png" alt="Cena do minecraft dungeons">
+          <p>Descubra um jogo de ação e aventura inspirado nos clássicos exploradores de masmorras.</p>
           <a href="#" class="btn-primary">SAIBA MAIS</a>
-        </section>
+        </article>
         
-        <section class="trailer-video">
-          <img src="assets/frame_legends.png" alt="cena do minecraft legends">
-          <p>Lidere seus aliados em batalhas heroicas no jogo de ação e estratégia do Minecraft Legends..</p>
+        <article class="trailer-video">
+          <h4 class="sr-only">Trailer Minecraft Legends</h4>
+          <img src="assets/frame_legends.png" alt="Cena do minecraft legends">
+          <p>Lidere seus aliados em batalhas heroicas no jogo de ação e estratégia do Minecraft Legends.</p>
           <a href="#" class="btn-primary">SAIBA MAIS</a>
-        </section>
+        </article>
         
-        <section class="trailer-video">
-          <img src="assets/frame_education.png" alt="cena do minecraft education">
-          <p>Uma plataforma de aprendizado baseada em jogos com suporte para milhares de educadores em mais de 100 países..</p>
+        <article class="trailer-video">
+          <h4 class="sr-only">Trailer Minecraft Education</h4>
+          <img src="assets/frame_education.png" alt="Cena do minecraft education">
+          <p>Uma plataforma de aprendizado baseada em jogos com suporte para milhares de educadores em mais de 100 países.</p>
           <a href="#" class="btn-primary">SAIBA MAIS</a>
-        </section>
-
-         
-        </section>
+        </article>
       </section>
     </section>
+
     <section class="latest-news" aria-labelledby="titulo-noticias">
       <h2 id="titulo-noticias">NOTÍCIAS MAIS RECENTES</h2>
       <a href="#" class="view-all">Ver todas as notícias ></a>
-
-       <section class="latest-news" aria-labelledby="titulo-noticias">
-      <h2 id="titulo-noticias">NOTÍCIAS MAIS RECENTES</h2>
-      <a href="#" class="view-all">Ver todas as notícias ></a>
-
+      
       <section class="news-grid">
+        <h3 class="sr-only">Grade de Notícias</h3>
         <article class="news-item">
           <img src="assets/snapshot_minecraft.jpg" alt="Snapshot 1">
           <h3>Minecraft Java edition Snapshot</h3>
         </article>
-
         <article class="news-item">
           <img src="assets/minecraft_Java_versao_nova.jpg" alt="Imagem da nova atualização do Java Edition">
           <h3>Minecraft Java Edition nova versão</h3>
         </article>
-
         <article class="news-item">
           <img src="assets/dungeons_battle.jpg" alt="Capa da atualização de combate do Dungeons">
           <h3>Minecraft Dungeons: Battle</h3>
         </article>
       </section>
 
-     <section class="download-banner">
+      <aside class="download-banner" aria-labelledby="titulo-download">
+        <h3 id="titulo-download" class="sr-only">Zona de Download</h3>
         <img src="assets/download_banner.png" alt="Ícone de um rosto de Creeper verde">
         <section class="download-text">
+          <h4 class="sr-only">Informações de Download</h4>
           <h3>Precisa baixar novamente?</h3>
           <p>Já comprou o jogo, mas precisa da instalação? Encontre a distribuição da sua plataforma.</p>
         </section>
         <a href="#" class="btn-secondary">IR PARA DOWNLOADS</a>
-      </section>
+      </aside>
     </section>
-     <section class="newsletter-section" aria-labelledby="titulo-newsletter">
-      <h2 id="titulo-newsletter">RECEBA AS ÚLTIMAS NOTÍCIAS SOBRE O MINECRAFT!</h2>
 
+    <section class="newsletter-section" aria-labelledby="titulo-newsletter">
+      <h2 id="titulo-newsletter">RECEBA AS ÚLTIMAS NOTÍCIAS SOBRE O MINECRAFT!</h2>
       <form class="newsletter-form" action="#" method="POST">
         <section class="form-group">
-          <!-- O "for" do label ligado ao "id" do input garante a acessibilidade exigida -->
-          <label for="email">Endereço de email </label>
+          <h3 class="sr-only">Campo de Email</h3>
+          <label for="email">Endereço de email</label>
           <input type="email" id="email" name="email" required>
         </section>
-
+        
         <section class="form-group">
+          <h3 class="sr-only">Seleção de País</h3>
           <label for="country">País</label>
           <select id="country" name="country" required>
+            <option value="" disabled selected>Selecione um país</option>
             <option value="br">Brasil</option>
             <option value="pt">Portugal</option>
             <option value="us">Estados Unidos</option>
           </select>
         </section>
-
+        
         <p class="terms">Ao clicar em Enviar, você concorda com os Termos e Condições e a Política de Privacidade.</p>
         <button type="submit" class="btn-primary">ENVIAR</button>
       </form>
     </section>
+
+    <section class="collectibles-section" aria-labelledby="titulo-colecionaveis">
+      <header class="collectibles-info">
+        <h2 id="titulo-colecionaveis">ITENS COLECIONÁVEIS</h2>
+        <p>O mundo do Minecraft é enorme. Por que não levá-lo além das fronteiras de bloco? Personalize seu dispositivo com nossos papéis de parede favoritos do Minecraft, banners de redes sociais e muito mais!</p>
+        <a href="#" class="view-all-link">Ver todos os itens colecionáveis ></a>
+        
+        <nav class="carousel-controls" aria-label="Controles do carrossel">
+          <button type="button" aria-label="Anterior">&larr;</button>
+          <button type="button" aria-label="Próximo">&rarr;</button>
+        </nav>
+      </header>
+
+      <section class="collectibles-grid">
+        <h3 class="sr-only">Catálogo de Itens Colecionáveis</h3>
+        
+        <article class="collectible-card">
+          <img src="assets/aniversario_15anos.jpg" alt="Arte comemorativa do aniversário de 15 anos do Minecraft">
+          <p class="category">PAPÉIS DE PAREDE</p>
+          <h3>Aniversário de 15 anos</h3>
+          <a href="#" class="download-icon" aria-label="Baixar papel de parede Aniversário de 15 anos">↓</a>
+        </article>
+        
+        <article class="collectible-card">
+          <img src="assets/colecao_minecraft.jpg" alt="Arte promocional da coleção Minecraft">
+          <p class="category">PAPEL DE PAREDE</p>
+          <h3>Coleção Minecraft</h3>
+          <a href="#" class="download-icon" aria-label="Baixar papel de parede Coleção Minecraft">↓</a>
+        </article>
+        
+        <article class="collectible-card">
+          <img src="assets/homepage_minecraftr_dungeons.jpg" alt="Arte de Minecraft Dungeons com personagens em batalha">
+          <p class="category">PAPEL DE PAREDE</p>
+          <h3>Minecraft Dungeons</h3>
+          <a href="#" class="download-icon" aria-label="Baixar papel de parede Minecraft Dungeons">↓</a>
+        </article>
+        
+        <article class="collectible-card">
+          <img src="assets/homepage_minecraft_legends.jpg" alt="Arte de Minecraft Legends com personagens em batalha do lado do bem e do lado do mal">
+          <p class="category">PAPEL DE PAREDE</p>
+          <h3>Minecraft Legends</h3>
+          <a href="#" class="download-icon" aria-label="Baixar papel de parede Minecraft Legends">↓</a>
+        </article>
+        
+        <article class="collectible-card">
+          <img src="assets/homepage_colecao_de_burberry.jpg" alt="Arte de Coleçao de BurBerry com baloes e cor roxa">
+          <p class="category">PAPEL DE PAREDE</p>
+          <h3>Coleção Burberry</h3>
+          <a href="#" class="download-icon" aria-label="Baixar papel de parede Coleção Burberry">↓</a>
+        </article>
+      </section>
+    </section>
+  </main> 
