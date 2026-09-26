@@ -7,27 +7,79 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header">
-      <a href="#" class="logo">
-        <img src="assets/logo_pedra_300x51.svg" alt="Logotipo oficial do Minecraft em blocos de pedra">
-      </a>
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="#jogos">JOGOS</a></li>
-          <li><a href="#comunidade">COMUNIDADE</a></li>
-          <li><a href="#loja">LOJA</a></li>
-          <li><a href="#suporte">SUPORTE</a></li>
-        </ul>
-      </nav>
-      <form class="search-form" action="#" method="GET">
-        <label for="site-search" class="sr-only">Pesquisar no site:</label>
-        <input type="search" id="site-search" name="q" placeholder="Buscar no Minecraft...">
-        <button type="submit">Buscar</button>
-      </form>
 
-    </div>
+  <header class="header-principal">
+    
+    <a href="#" class="logo" aria-label="Página Inicial">
+      <img src="assets/logo_pedra_300x51.svg" alt="Logotipo oficial do Minecraft em blocos de pedra">
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#jogos">JOGOS</a></li>
+        <li><a href="#comunidade">COMUNIDADE</a></li>
+        <li><a href="#loja">LOJA</a></li>
+        <li><a href="#suporte">SUPORTE</a></li>
+      </ul>
+    </nav>
+
+    <form class="search-form" action="#" method="GET">
+      <label for="site-search" class="sr-only">Pesquisar no site:</label>
+      <input type="search" id="site-search" name="q" placeholder="Buscar no Minecraft...">
+      <button type="submit">Buscar</button>
+    </form>
+
   </header>
 
-</body>
-</html>
+  <main>
+
+    <section class="hero">
+      <section class="hero-content">
+        <h1>MINECRAFT</h1>
+        <p>Crie, explore e sobreviva em um mundo de blocos infinito.</p>
+        <a href="#comprar" class="btn-primary">OBTER O MINECRAFT</a>
+      </section>
+
+      <figure class="hero-image">
+        <img src="assets/fundo_cabeçalho_1080x1080.webp" alt="Personagem Steve no cenário de blocos do Minecraft olhando o horizonte">
+      </figure>
+    </section>
+
+    <section class="games-section" id="jogos">
+      <h2>DESCUBRA OS JOGOS DO MINECRAFT</h2>
+
+      <article class="game-card">
+        <figure>
+          <img src="assets/MINECRAFT.jpg" alt="Capa do jogo Minecraft original mostrando blocos de grama e paisagem verde">
+        </figure>
+        <h3>Minecraft</h3>
+        <p>Explore seu próprio mundo, sobreviva à noite e crie tudo o que puder imaginar.</p>
+        <a href="#" class="card-link">Saiba mais</a>
+      </article>
+
+      <article class="game-card">
+        <figure>
+          <img src="assets/MINECRAFT_DUNGEONS_II.jpg" alt="Capa do jogo Minecraft Dungeons 2 com novos heróis e desafios">
+        </figure>
+        <h3>Minecraft Dungeons 2</h3>
+        <p>Continue a aventura épica com novos desafios, armas e masmorras ainda mais perigosas.</p>
+        <a href="#" class="card-link">Saiba mais</a>
+      </article>
+      <article class="game-card">
+        <figure>
+          <img src="assets/MINECRAFT_DUNGEONS.webp" alt="Capa do jogo Minecraft Dungeons com heróis enfrentando monstros em uma masmorra">
+        </figure>
+        <h3>Minecraft Dungeons</h3>
+        <p>Enfrente hordas de monstros em um jogo de ação e aventura inspirado em masmorras clássicas.</p>
+        <a href="#" class="card-link">Saiba mais</a>
+      </article>
+
+      <article class="game-card">
+        <figure>
+          <img src="assets/MINECRAFT_LEGENDS.webp" alt="Capa do jogo Minecraft Legends mostrando um herói liderando tropas em um cavalo">
+        </figure>
+        <h3>Minecraft Legends</h3>
+        <p>Lidere suas tropas em batalhas estratégicas para defender a Overworld dos piglins.</p>
+        <a href="#" class="card-link">Saiba mais</a>
+      </article>
+    </section>
