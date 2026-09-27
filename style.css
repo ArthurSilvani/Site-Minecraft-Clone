@@ -354,3 +354,107 @@ ul {
   background-color: var(--cor-branca);
   color: var(--cor-preta);
 }
+
+.site-footer {
+  background-color: var(--cor-preta);
+  color: var(--cor-branca);
+  padding: var(--espacamento-xl) 5%;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: var(--espacamento-padrao);
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: var(--espacamento-grande);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacamento-xl);
+}
+
+.footer-logos img {
+  height: 35px;
+  width: auto;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.footer-menus {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacamento-grande);
+}
+
+.custom-clone-info {
+  margin-top: var(--espacamento-xl);
+  padding: var(--espacamento-padrao);
+  background-color: var(--cor-cinza-escuro);
+  text-align: center;
+  border-left: 4px solid var(--cor-verde-primaria);
+}
+
+@media (min-width: 768px) {
+  .header-principal {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+  .header-principal nav ul {
+    flex-direction: row; 
+    gap: var(--espacamento-grande);
+  }
+  
+  .hero-content {
+    margin: 5% 10%; 
+  }
+  
+  .games-section { grid-template-columns: repeat(2, 1fr); }
+  
+  .dungeons-promo, .marketplace-highlight {
+    flex-direction: row;
+  }
+  .dungeons-promo > img, .marketplace-highlight .highlight-item {
+    flex: 1;
+    height: auto;
+  }
+  .promo-text, .highlight-info { flex: 1; }
+  
+  .grade-complementos { grid-template-columns: repeat(3, 1fr); }
+  .news-grid { grid-template-columns: repeat(3, 1fr); }
+  .collectibles-grid { grid-template-columns: repeat(3, 1fr); }
+  
+  .download-banner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .footer-menus { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .games-section { grid-template-columns: repeat(4, 1fr); }
+  .grade-complementos { grid-template-columns: repeat(5, 1fr); }
+  .collectibles-grid { grid-template-columns: repeat(5, 1fr); }
+  
+  .trailers-container {
+    flex-direction: row;
+  }
+  .trailers-sidebar { flex: 1; }
+  .trailer-video { flex: 3; }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-logos { flex: 1; }
+  .footer-menus { flex: 2; }
+}
